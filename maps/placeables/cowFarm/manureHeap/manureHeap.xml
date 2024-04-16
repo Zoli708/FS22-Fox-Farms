@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="manureHeap" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="$shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_manureHeap</name>
+        <image>maps/placeables/store_trigger.png</image>
+        <functions>
+            <function>$l10n_function_manureHeap</function>
+			<function>(Trigger)</function>
+        </functions>
+        <price>34500</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+		
+		<canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+		<!-- <boughtWithFarmland>true</boughtWithFarmland> -->
+		
+        <vertexBufferMemoryUsage>71936</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>7936</indexBufferMemoryUsage>
+        <textureMemoryUsage>1048576</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/cowFarm/manureHeap/manureHeap.i3d</filename>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true"  >
+        <!-- <testAreas> -->
+            <!-- <testArea startNode="0>0|3|0" endNode="0>0|3|0|1" /> -->
+        <!-- </testAreas> -->
+		
+		<sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="0>1|0" endNode="0>1|0|0" />
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="0>0|2" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <infoTrigger triggerNode="0>2" />
+
+    <manureHeap node="0>0" capacity="6000000" isExtension="false" >
+        <area startNode="0>0|3|0" widthNode="0>0|3|0|0" heightNode="0>0|3|0|1" activationTriggerNode="0>0|4" />
+        <clearArea startNode="0>3|0" widthNode="0>3|0|0" heightNode="0>3|0|1" />
+
+        <loadingStation storageRadius="10" supportsExtension="false">
+            <loadTrigger triggerNode="0>0|0" fillTypes="MANURE" fillLitersPerSecond="2000" /> <!-- aiNode="0>0|1" -->
+        </loadingStation>
+    </manureHeap>
+	
+    <clearAreas>
+    </clearAreas>
+
+    <leveling >
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+	
+</placeable>

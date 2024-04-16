@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Fox Farms" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/maps/mapUS/textures/props/tireRack_diffuse.png"/>
+    <File fileId="6" filename="$data/maps/mapUS/textures/props/tireRack_normal.png"/>
+    <File fileId="7" filename="$data/maps/mapUS/textures/props/tireRack_specular.png"/>
+    <File fileId="1" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bgaBox_mat" materialId="4" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="tireRack_mat" materialId="6">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="7">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="workshop02.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="workshop02" nodeId="14">
+        <TransformGroup name="workshop" nodeId="15">
+          <TransformGroup name="markerWrench" translation="-5.642 0 -2.447" nodeId="16"/>
+          <Shape shapeId="1" name="warningStripes" translation="0 0 -1.85977" clipDistance="100" nodeId="17" materialIds="7" receiveShadows="true"/>
+          <Shape shapeId="2" name="vehicleTrigger" translation="0 1.81687 2.6819" scale="0.884921 1 0.458974" static="true" trigger="true" collisionMask="2097152" density="0.0001" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="3" name="playerTrigger" translation="-5.642 0 -2.447" static="true" trigger="true" collisionMask="3145728" clipDistance="300" nodeId="19" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="20">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-7.838 0 -0.409467" nodeId="21">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="15.449 0 6.51673" nodeId="22"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visual" translation="-2.70472 0 -0.393267" nodeId="23">
+          <TransformGroup name="tireRack" nodeId="24">
+            <Shape shapeId="4" name="tireRack" clipDistance="140" nodeId="25" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="col" visibility="false" dynamic="true" clipDistance="300" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="$shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+			<en>Clothes and furniture storage</en>
+			<de>Kleider- und Möbelaufbewahrung</de>
+			<fr>Stockage de vêtements et de meubles</fr>
+		</name>
+        <image>maps/placeables/sellingStations/store_warehouse.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>367104</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>36096</indexBufferMemoryUsage>
+        <textureMemoryUsage>2097152</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/sellingStations/sellingStationShop02.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="0>4" teleportNode="0>5" />
+    </hotspots>
+	
+    <triggerMarkers>
+        <triggerMarker node="0>4" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="0>7" endNode="0>7|0" />
+        </updateAreas>
+    </ai>
+
+    <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="0>1"  fillTypes="CLOTHES FURNITURE"/>
+        <fillType name="CLOTHES"          priceScale="1" 	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FURNITURE"        priceScale="1.2" 	supportsGreatDemand="true" disablePriceDrop="false" />
+    </sellingStation>
+
+</placeable>

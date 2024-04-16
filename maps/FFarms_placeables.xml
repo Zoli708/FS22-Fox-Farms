@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeables>
+	<!-- Main Farm -->
+    <placeable mapBoundId="farmSilo"				filename="$mapdir$/maps/placeables/baseBuildingsXML/flatBottomBin3608.xml" position="309.672 10 -770.259" rotation="180 -62.865 -180" defaultFarmProperty="false" farmId="1"/> <!--mapBoundId="flatBottomBin3608"-->
+    <placeable mapBoundId="farmSilo"				filename="$mapdir$/maps/placeables/baseBuildingsXML/flatBottomBin3609.xml" position="270.969 10 -653.344" rotation="0 2.859 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="farmSilo"				filename="$mapdir$/maps/placeables/baseBuildingsXML/flatBottomBin3609.xml" position="282.075 10 -657.489" rotation="0 0.541 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="farmSilo"				filename="$mapdir$/maps/placeables/baseBuildingsXML/flatBottomBin3609.xml" position="293.546 10 -661.77" rotation="0 2.375 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="farmSilo"				filename="$mapdir$/maps/placeables/baseBuildingsXML/flatBottomBin3609.xml" position="305.125 10 -666.091" rotation="0 9.254 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="farmSilo"				filename="$mapdir$/maps/placeables/baseBuildingsXML/flatBottomBin3609.xml" position="316.48 10 -670.718" rotation="0 9.381 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="farmSilo"				filename="$mapdir$/maps/placeables/baseBuildingsXML/flatBottomBin3609.xml" position="327.274 10 -676.406" rotation="0 20.465 0" defaultFarmProperty="false" farmId="1"/>
+
+    <placeable mapBoundId="easyShed03" 				filename="$mapdir$/maps/placeables/baseBuildingsXML/easyShed03.xml" position="-419.194 10 -726.096" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="easyShed03" 				filename="$mapdir$/maps/placeables/baseBuildingsXML/easyShed03.xml" position="-364.45 10 -726.096" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="easyShed03" 				filename="$mapdir$/maps/placeables/baseBuildingsXML/easyShed03.xml" position="342.279 10 -719.871" rotation="0 -73.63 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="easyShed01" 				filename="$mapdir$/maps/placeables/baseBuildingsXML/easyShed01.xml" position="235.06 10 -681.951" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="easyShed01" 				filename="$mapdir$/maps/placeables/baseBuildingsXML/easyShed01.xml" position="235.06 10 -714.165" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="easyShed01" 				filename="$mapdir$/maps/placeables/baseBuildingsXML/easyShed01.xml" position="300.261 10 -755.736" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="easyShed01" 				filename="$mapdir$/maps/placeables/baseBuildingsXML/easyShed01.xml" position="267.916 10 -755.736" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+
+    <placeable mapBoundId="imetos" 					filename="$mapdir$/maps/placeables/baseBuildingsXML/imetosIMT300.xml" position="230.273 10 -783.252" rotation="180 70.367 180" defaultFarmProperty="false" farmId="1"/>
+	
+    <placeable mapBoundId="farmHouse" 				filename="$mapdir$/maps/placeables/farmBuildings/farmHouse.xml" position="224.687 10 -768.296" rotation="180 0 -180" defaultFarmProperty="false" farmId="1"/>
+
+    <placeable mapBoundId="dogHouse" 				filename="$mapdir$/maps/placeables/baseBuildingsXML/doghouse.xml" position="217.003 10 -755.78" rotation="0 -10.72 0" defaultFarmProperty="false" farmId="1"/>
+
+    <placeable 										filename="$mapdir$/maps/placeables/farmBuildings/farmPrefabs.xml" position="0 0 0" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/> <!-- mapBoundId="farmPrefabs" -->
+    
+	<placeable 						 				filename="$mapdir$/maps/placeables/baseBuildingsXML/hds9184M.xml" position="331.759 10 -700.791" rotation="180 75.509 180" defaultFarmProperty="false" farmId="1"/>
+
+	<!-- Cow Farm -->
+	<placeable 										filename="$mapdir$/maps/placeables/cowFarm/cowFarmPrefabs.xml" position="0 0 0" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/> <!-- mapBoundId="farmPrefabs" -->
+
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/gateMLazyEM.xml" position="-389.366 10 -758.289" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/gateMLazyEM.xml" position="-284.867 10 -758.289" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/gateMLazyEM.xml" position="-437.369 10 -758.289" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/gateMLazyEM.xml" position="-437.369 10.378 -889.320" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/gateMLazyEM.xml" position="-284.867 10 -889.320" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/gateMLazyEM.xml" position="-389.366 10 -889.320" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+
+    <placeable mapBoundId="bunkerSilo" 				filename="$mapdir$/maps/placeables/cowFarm/bunkerSilo01.xml" position="-305.451 10 -673.991" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="bunkerSilo" 				filename="$mapdir$/maps/placeables/cowFarm/bunkerSilo02.xml" position="-294.206 10 -715.412" rotation="0 90 0" defaultFarmProperty="false" farmId="1"/>
+
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/cowFarm01/cowFarm01.xml" position="-311.911 10 -756.269" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/cowFarm02/cowFarm02.xml" position="-403.066 10 -756.269" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/cowFarm03/cowFarm03.xml" position="-427.590 10 -756.269" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/waterTank.xml" position="-454.159 10 -757.274" rotation="0 41.836 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable 										filename="$mapdir$/maps/placeables/cowFarm/manureHeap/manureHeap.xml" position="-274.05 9.977 -771.56" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="fireHydrant"				filename="$mapdir$/maps/placeables/waterFillTriggers/fireHydrant.xml" position="-262.125 10 -751.772" rotation="0 67.34 0" defaultFarmProperty="false" farmId="1"/>
+
+	<!-- Grain Mill -->
+    <placeable mapBoundId="sellingStationGrainMill" filename="$mapdir$/maps/placeables/grainMill/grainMill.xml" position="534.086 10 252.823" rotation="0 -90 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="fireHydrant" 			filename="$mapdir$/maps/placeables/waterFillTriggers/fireHydrant.xml" position="559.891 9.998 265.078" rotation="0 44.43 0" defaultFarmProperty="false" farmId="1"/>
+
+	<!-- BGA Plant -->
+    <placeable mapBoundId="bga" 					filename="$mapdir$/maps/placeables/bga/bga1mw.xml" position="-649.976 9 882.402" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="bunkerSilo" 				filename="$mapdir$/maps/placeables/bga/bgaBunkerSilo.xml" position="-649.696 9 880.785" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable 						 				filename="$mapdir$/maps/placeables/baseBuildingsXML/hds9184M.xml" position="-721.774 9 899.751" rotation="0 73.824 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="fireHydrant" 			filename="$mapdir$/maps/placeables/waterFillTriggers/fireHydrant.xml" position="-721.64 9 901.732" rotation="0 180 0" defaultFarmProperty="false" farmId="1"/>
+
+	<!-- Selling Stations etc... -->
+    <placeable mapBoundId="sellingStationGW" 		filename="$mapdir$/maps/placeables/sellingStations/sellingStationGW.xml" position="-805.103 14.82 44.136" rotation="0 0 0" />
+    <placeable mapBoundId="sellingStationAD" 		filename="$mapdir$/maps/placeables/sellingStations/sellingStationAD.xml" position="45.769 12.179 319.808" rotation="0 0 0" />
+    <placeable mapBoundId="sellingStationShop01" 	filename="$mapdir$/maps/placeables/sellingStations/sellingStationShop01.xml" position="866.117 11.914 488.323" rotation="0 0 0" />
+    <placeable mapBoundId="sellingStationShop02" 	filename="$mapdir$/maps/placeables/sellingStations/sellingStationShop02.xml" position="850.39 11.914 477.942" rotation="0 0 0" />
+    <placeable mapBoundId="sellingStationShop03" 	filename="$mapdir$/maps/placeables/sellingStations/sellingStationShop03.xml" position="834.382 11.914 477.942" rotation="0 0 0" />
+    <placeable mapBoundId="sellingStationShop04" 	filename="$mapdir$/maps/placeables/sellingStations/sellingStationShop04.xml" position="865.989 11.914 463.938" rotation="0 0 0" />
+    <placeable mapBoundId="sellingStationShop05" 	filename="$mapdir$/maps/placeables/sellingStations/sellingStationShop05.xml" position="853.192 11.914 454.704" rotation="0 0 0" />
+
+    <placeable mapBoundId="gasStation"             	filename="$mapdir$/maps/placeables/gasStations/gasStation01.xml"                         position="834.555 11.914 500.94" rotation="0 0 0" />
+    <placeable mapBoundId="gasStation"             	filename="$mapdir$/maps/placeables/gasStations/gasStation02.xml"                         position="-634.185 9 835.891" rotation="0 0 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="gasStation"             	filename="$mapdir$/maps/placeables/gasStations/gasStationFarm.xml"                         position="327.193 10 -704.305" rotation="0 15.746 0" defaultFarmProperty="false" farmId="1"/>
+
+    <placeable mapBoundId="waterFillTriggers" 		filename="$mapdir$/maps/placeables/waterFillTriggers/waterFillTriggers.xml" position="0 0 0" rotation="0 0 0" />
+
+    <placeable 										filename="$mapdir$/maps/placeables/workshop/workshop01.xml" position="791.985 11.903 473.454" rotation="0 0 0" farmId="1"/>
+    <placeable 										filename="$mapdir$/maps/placeables/workshop/workshop02.xml" position="329.531 10 -704.36" rotation="0 -72.824 0" defaultFarmProperty="false" farmId="1"/>
+    <placeable mapBoundId="limeStationWH" 			filename="$mapdir$/maps/placeables/limeStation/limeStationWH.xml" position="818.259 11.914 488.336" rotation="0 0 0" />
+
+	<!-- Animal dealer animals -->
+    <!-- <placeable mapBoundId="animalDealerHusbandry" 	filename="$mapdir$/maps/placeables/animalDealer/animalDealerCow01.xml" position="61.989 11.788 354.728" rotation="0 0 0" /> -->
+	<placeable mapBoundId="animalDealerHusbandry" 	filename="$mapdir$/maps/placeables/animalDealer/animalDealerCow01.xml" position="61.989 11.788 354.728"  rotation="0 0 0" farmId="60">
+		<husbandry globalProductionFactor="0.000000"/>
+        <husbandryAnimals>
+            <clusters>
+                <animal subType="COW_HOLSTEIN" numAnimals="30" age="24" health="0" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+	</placeable>
+	<placeable mapBoundId="animalDealerHusbandry" 	filename="$mapdir$/maps/placeables/animalDealer/animalDealerCow02.xml" position="63.993 11.769 317.306"  rotation="0 0 0" farmId="60">
+		<husbandry globalProductionFactor="0.000000"/>
+        <husbandryAnimals>
+            <clusters>
+                <animal subType="COW_LIMOUSIN" numAnimals="15" age="24" health="0" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+	</placeable>
+	<placeable mapBoundId="animalDealerHusbandry" 	filename="$mapdir$/maps/placeables/animalDealer/animalDealerCow03.xml" position="63.993 11.755 297.338"  rotation="0 0 0" farmId="60">
+		<husbandry globalProductionFactor="0.000000"/>
+        <husbandryAnimals>
+            <clusters>
+                <animal subType="COW_ANGUS" numAnimals="15" age="24" health="0" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+	</placeable>
+
+</placeables>

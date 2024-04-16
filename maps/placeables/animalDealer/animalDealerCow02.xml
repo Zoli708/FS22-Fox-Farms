@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="animalDealerHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Animaldealer husbandy</name>
+        <!-- <image>maps/placeables/Immagini_iconiche/Animali.png</image> -->
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <price>1</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>animalpens</category>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/animalDealer/animalDealerCow02.i3d</filename>
+        <canBeRenamed>false</canBeRenamed>
+		<canBeDeleted>false</canBeDeleted>
+    </base>
+	
+	<triggerMarkers>
+    </triggerMarkers>
+    		
+    <husbandry saveId="Animals_COW" hasStatistics="false">
+		<animals type="COW" maxNumAnimals="20">
+            <navigation rootNode="navigationRootNode" filename="maps/placeables/animalDealer/animalDealerCowMedium_navMesh.i3d" />
+        </animals>
+	</husbandry>
+
+    <i3dMappings>
+        <i3dMapping id="navigationRootNode" node="0>0" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <bales>
+        <bale filename="maps/textures/bales/roundbale125.xml"/>
+        <bale filename="maps/textures/bales/roundbale150.xml"/>
+        <bale filename="maps/textures/bales/roundbale180.xml"/>
+
+        <bale filename="maps/textures/bales/squarebale240.xml"/>
+        <bale filename="maps/textures/bales/squarebale220.xml"/>
+        <bale filename="maps/textures/bales/squarebale180.xml"/>
+        <bale filename="maps/textures/bales/squarebale120.xml"/>
+
+        <bale filename="$data/objects/roundbales/roundbale125.xml"/>
+        <bale filename="$data/objects/roundbales/roundbale150.xml"/>
+        <bale filename="$data/objects/roundbales/roundbale180.xml"/>
+
+        <bale filename="$data/objects/roundbales/roundbale125FilmBinding.xml"/>
+        <bale filename="$data/objects/roundbales/roundbale150FilmBinding.xml"/>
+
+        <bale filename="$data/objects/squarebales/squarebale240.xml"/>
+        <bale filename="$data/objects/squarebales/squarebale220.xml"/>
+        <bale filename="$data/objects/squarebales/squarebale180.xml"/>
+
+        <bale filename="$data/objects/squarebales/squarebale120.xml"/>
+        <bale filename="$data/objects/squarebales/packedSquareBale120.xml" isAvailable="false"/>
+
+        <bale filename="$data/objects/cottonModules/cottonRoundbale238.xml"/>
+        <bale filename="$data/objects/cottonModules/cottonSquarebale488.xml"/>
+
+        <bale filename="$data/objects/roundbales/biomass/biomassBale125.xml"/>
+    </bales>
+</map>

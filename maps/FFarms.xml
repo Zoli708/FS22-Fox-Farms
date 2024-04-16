@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="2048" height="2048" imageFilename="maps/FFarms_overview.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823">
+    <filename>maps/FFarmsMap.i3d</filename>
+    <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+    <textureMemoryUsage>0</textureMemoryUsage>
+
+    <npcs filename="maps/FFarms_npcs.xml" />
+    <sounds filename="maps/FFarms_sound.xml" />
+    <farmlands filename="maps/FFarms_farmlands.xml" />
+    <collectibles filename="maps/FFarms_collectibles.xml" />
+
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="1" />
+    <tipCollision revision="1" />
+    <placementCollision revision="1" />
+    <navigationCollision revision="1" />
+
+    <shop filename="$data/store/ui/shop.xml" />
+    <storeItems filename="$data/maps/mapUS/storeItems.xml" />
+
+    <environment filename="$data/maps/mapUS/environment.xml" />
+    <!-- <growth filename="$data/maps/maps_growth.xml" /> -->
+	<growth filename="maps/FFarms_growth.xml" />
+    <!-- <weed filename="$data/maps/mapUS/weed.xml" /> -->
+    <weed filename="maps/FFarms_weed.xml" />
+    <fieldGround filename="$data/maps/mapUS/fieldGround.xml" />
+
+    <animals filename="$dataS/character/animals.xml">
+        <names filename="$dataS/character/animalNames.xml" />
+        <food filename="maps/FFarms_animalFood.xml" />
+    </animals>
+    <wildlife filename="$dataS/character/wildlifeSpawner.xml" />
+    <helpers filename="$data/maps/maps_helpers.xml" />
+
+    <missionVehicles filename="$dataS/missionVehicles.xml" />
+
+    <licensePlates filename="$data/maps/mapUS/licensePlates/licensePlatesUS.xml"/>
+
+    <helpline filename="$dataS/helpLine.xml">
+        <trigger position="225.005 10 -751.246"   	categoryIndex="2" pageIndex="1" /> <!-- buying fields and farming -->
+        <trigger position="187.47 10 -758.53"   	categoryIndex="3" pageIndex="1" /> <!-- improving yield -->
+        <trigger position="239.155 10 -729.353" 	categoryIndex="8" pageIndex="2" /> <!-- build mode -->
+        <trigger position="-347.512 10 -739.209" 	categoryIndex="6" pageIndex="1" /> <!-- animals -->
+        <trigger position="328.84 10 -709.885"      categoryIndex="1" pageIndex="2" /> <!-- shop -->
+    </helpline>
+
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+
+    <hotspots>
+        <placeableHotspot type="SHOP_ANIMAL" text="$l10n_animals_dealer" worldPosition="101.483 340.627" teleportWorldPosition="101.483 11.937 340.627" />
+        <placeableHotspot type="SHOP" text="$l10n_vehicle_shop" worldPosition="811.078 424.096" teleportWorldPosition="811.078 11.914 424.096" />
+    </hotspots>
+
+    <!-- <densityMapHeightTypes filename="$data/maps/maps_densityMapHeightTypes.xml" /> -->
+	<densityMapHeightTypes filename="maps/FFarms_densityMapHeightTypes.xml" />
+    <!-- <fillTypes filename="$data/maps/maps_fillTypes.xml" /> -->
+	<fillTypes filename="maps/FFarms_fillTypes.xml" />
+    <!-- <fruitTypes filename="$data/maps/maps_fruitTypes.xml" /> -->
+	<fruitTypes filename="maps/FFarms_fruitTypes.xml" />
+	
+    <!-- <motionPathEffects filename="$data/effects/motionPathEffects.xml"/> -->
+	<motionPathEffects filename="maps/FFarms_motionPathEffects.xml"/>
+    <!-- <bales filename="$data/maps/maps_bales.xml"/> -->
+	<bales filename="maps/FFarms_bales.xml"/>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="$data/effects/effects.xml" />
+        <additionalFile filename="maps/textures/foliage/fillPlane_materialHolder.i3d" />
+		<!-- <fillTypes filename="maps/FFarms_fillTypes.xml" /> -->
+		<!-- <fruitTypes filename="maps/FFarms_fruitTypes.xml" /> -->
+		<!-- <densityMapHeightTypes filename="maps/FFarms_densityMapHeightTypes.xml" /> -->
+		<!-- <motionPathEffects filename="maps/FFarms_motionPathEffects.xml"/> -->
+		<!-- <bales filename="maps/FFarms_bales.xml"/> -->
+		<!-- <growth filename="maps/FFarms_growth.xml" /> -->
+    </additionalFiles>
+
+    <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
+    <decoFoliages>
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoForest" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" />
+
+        <mapping name="grassShort" layerName="decoFoliage" state="9" />
+    </decoFoliages>
+
+    <paintableFoliages>
+        <paintableFoliage layerName="grass" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+    </paintableFoliages>
+
+    <!-- paintable ground types - need to be defined in map.i3d node TerrainTransformGroup|CombinedLayer -->
+    <groundTypeMappings>
+    <!-- Base -->
+        <groundTypeMapping type="dirt"           title="$l10n_groundType_dirt" 				layer="DIRT" />
+		<groundTypeMapping type="homok"          title="$l10n_groundType_dirt" 				layer="HOMOK" />
+    <!-- Standard -->
+        <groundTypeMapping type="asphalt"        title="$l10n_groundType_asphalt" 			layer="CONCRETE" />  <!-- fallback to layer concrete for placeables using "asphalt" -->
+        <groundTypeMapping type="gravel"         title="$l10n_groundType_gravel" 			layer="GRAVEL" />
+        <groundTypeMapping type="grass"          title="$l10n_groundType_grass" 			layer="GRASS" />
+        <groundTypeMapping type="animalMud"      title="$l10n_groundType_animalMud" 		layer="ANIMALMUD" />
+        <groundTypeMapping type="concrete"       title="$l10n_groundType_concrete" 			layer="CONCRETE" />
+		
+    <!-- Special -->
+		<groundTypeMapping type="forestGround"   title="$l10n_groundType_forestGround" 		layer="FORESTGROUND" />
+
+        <groundTypeMapping type="grassDry"       title="$l10n_groundType_grassDry" 			layer="GRASSDRY" />
+        <groundTypeMapping type="grassDryPatchy" title="Grass dry patchy" 					layer="GRASSDRYPATCHY" />
+        <groundTypeMapping type="gravelDirt"     title="Gravel dirt" 						layer="GRAVELDIRT" />
+        <groundTypeMapping type="gravelDust"     title="Gravel dust" 						layer="GRAVELDUST" />
+        <groundTypeMapping type="gravelGrass"    title="Gravel grass" 						layer="GRAVELGRASS" />
+        <groundTypeMapping type="gravelMoss"     title="Gravel moss" 						layer="GRAVELMOSS" />
+        <groundTypeMapping type="pathway"        title="Pathway" 							layer="PATHWAY" />
+        <groundTypeMapping type="pathwayGravel"  title="Pathway gravel" 					layer="PATHWAYGRAVEL" />
+        <groundTypeMapping type="riverBed"       title="River bed" 							layer="RIVERBED" />
+        <groundTypeMapping type="wetMud"         title="Wet mud" 							layer="WETMUD" />
+        <!-- <groundTypeMapping type="grassDry"       title="$l10n_groundType_grass" layer="GRASSDRY" /> -->
+    </groundTypeMappings>
+	
+	<precisionFarming>
+		<soilMap filename="maps/data/FFarms_soilMap.grle"/>
+		
+		<cropSensor fruitTypes="ALFALFA"/>
+		
+		<seedRateMap> 
+			<fruitTypes> 
+				<fruitType name="ALFALFA">
+					<seedRates rates="15 24 35" usages="0.01 0.015 0.02"/>
+
+					<soilTypes>
+						<soilType index="1" yields="0.875 1.000 0.937"/>
+						<soilType index="2" yields="0.900 1.000 0.950"/>
+						<soilType index="3" yields="1.000 1.000 0.920"/>
+						<soilType index="4" yields="0.777 1.000 0.788"/>
+					</soilTypes>
+				</fruitType>
+			</fruitTypes> 
+		</seedRateMap>
+		
+		<fruitRequirements>
+			<fruitRequirement fruitTypeName="WHEAT2">
+                <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="BARLEY2">
+                <soil soilTypeIndex="1" targetLevel="120" reduction="100" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="140" reduction="120" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="180" reduction="160" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="120" reduction="100" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="OAT2">
+                <soil soilTypeIndex="1" targetLevel="80" reduction="60" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="100" reduction="80" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="140" reduction="120" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="100" reduction="80" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="ALFALFA" alwaysAllowFertilization="true">
+                <soil soilTypeIndex="1" targetLevel="20" reduction="20" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="40" reduction="40" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="60" reduction="60" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="40" reduction="40" yieldPotential="0.9"/>
+            </fruitRequirement>
+		</fruitRequirements>
+	</precisionFarming>
+</map>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="receivingHopper" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>RH 24-60</name>
+        <specs>
+        </specs>
+        <functions>
+            <function>$l10n_function_palletPacker</function>
+        </functions>
+        <image>$data/vehicles/grimme/rh2460/store_rh2460.png</image>
+        <price>45000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>GRIMME</brand>
+        <category>belts</category>
+        <shopTranslationOffset>0 -0.084 0</shopTranslationOffset>
+        <shopRotationOffset>0.37 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>2725120</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>835584</indexBufferMemoryUsage>
+        <textureMemoryUsage>1703936</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_belt</typeDesc>
+        <filename>$data/vehicles/grimme/rh2460/rh2460.i3d</filename>
+        <size width="4.2" length="10.0" />
+        <components>
+            <component centerOfMass="0 0.6 0" solverIterationCount="4" mass="1500" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="OTHER" />
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW309/500_50R17.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics driveMode="0" restLoad="0.6" repr="wheelLeft"  initialCompression="10" suspTravel="0.1" spring="50" damper="50"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW309/500_50R17.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics driveMode="0" restLoad="0.6" repr="wheelRight" initialCompression="10" suspTravel="0.1" spring="50" damper="50"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <rimColor material="18">SHARED_WHITE1</rimColor>
+
+        <hubs>
+            <color0>GRIMME_RED1</color0>
+            <color1>SHARED_GREY3</color1>
+            <hub linkNode="wheelLeft"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.2 0.25 0.25" />
+            <hub linkNode="wheelRight" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.2 0.25 0.25" />
+        </hubs>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" needsToolbar="true" needsLowering="false" lowerRotLimitScale="1 3 2" upperRotLimitScale="1 3 2" >
+                <distanceToGround lower="0.632" upper="1" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <brakeForce force="0.25"/>
+    </attachable>
+
+    <enterable isTabbable="false" >
+        <enterReferenceNode node="0>" />
+        <exitPoint node="exitPoint" />
+        <cameras>
+            <camera node="camera" rotatable="true" rotateNode="cameraRot" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="6.2" transMax="40" translation="0 0 9" rotation="-25 180 0" />
+        </cameras>
+         <forceSelectionOnEnter>true</forceSelectionOnEnter>
+    </enterable>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="potato sugarBeet carrot" capacity="13000">
+                        <exactFillRootNode node="exactFillRootNode" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" maxDelta="1" fillUnitIndex="1"/>
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+
+        <unloadInfos>
+            <unloadInfo>
+                <node node="unloadNode" width="3" length="3"/>
+            </unloadInfo>
+        </unloadInfos>
+    </fillVolume>
+
+    <receivingHopper>
+        <boxes spawnPlaceNode="boxSpawnPlace">
+            <box fillType="potato" filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <box fillType="sugarBeet" filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <box fillType="carrot" filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+        </boxes>
+    </receivingHopper>
+
+    <dischargeable>
+        <dischargeNode node="dischargeNode" emptySpeed="175" fillUnitIndex="1" maxDistance="3" canDischargeToGround="false" canDischargeToObject="true" canStartDischargeAutomatically="true">
+            <activationTrigger node="dischargeActivationTrigger" />
+            <info width="0.4" length="0.4" />
+            <effects>
+                <effectNode effectClass="MorphPositionEffect" effectNode="unloadingEffect" materialType="belt" delay="0" fadeTime="3" speed="0.9" scrollLength="5" scrollSpeed="0.8"/>
+            </effects>
+            <animationNodes>
+                <animationNode node="roll01" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll02" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll03" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll04" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll05" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll06" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll07" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll08" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll09" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll10" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll11" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll12" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll13" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="roll14" rotSpeed="-200" rotAxis="1"/>
+                <animationNode node="belts" class="ScrollingAnimation" scrollSpeed="-0.1" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="2"/>
+            </animationNodes>
+            <dischargeStateSound template="ROLLBELT_LOOP"/>
+        </dischargeNode>
+    </dischargeable>
+
+    <foliageBending>
+        <bendingNode minX="-1.6" maxX="1.6" minZ="-3.5" maxZ="3.6" yOffset="0.5" />
+        <bendingNode minX="-1.6" maxX="1.6" minZ="-4.55" maxZ="-3.5" yOffset="0.8" />
+    </foliageBending>
+
+    <tipOccluder>
+        <occlusionArea start="tipOccluderStart" width="tipOccluderWidth" height="tipOccluderHeight"/>
+    </tipOccluder>
+
+    <ai supportsAIJobs="false">
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2" width="3.3" height="3" length="8" lengthOffset="1.2"/>
+    </ai>
+
+    <baseMaterial>
+        <material name="rh2460_mat" baseNode="rh2460_vis">
+            <shaderParameter name="colorMat1" value="GRIMME_YELLOW1"/>
+            <shaderParameter name="colorMat2" value="GRIMME_YELLOW1"/>
+            <shaderParameter name="colorMat3" value="GRIMME_RED1"/>
+        </material>
+        <material name="rh2460Belt_mat" baseNode="belts">
+            <shaderParameter name="colorMat0" value="GRIMME_YELLOW1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="rh2460_main_component1" node="0>" />
+        <i3dMapping id="rh2460_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="wheelLeft" node="0>0|1|0" />
+        <i3dMapping id="wheelRight" node="0>0|1|1" />
+        <i3dMapping id="cameraRot" node="0>0|2|0" />
+        <i3dMapping id="camera" node="0>0|2|0|0" />
+        <i3dMapping id="exitPoint" node="0>0|3" />
+        <i3dMapping id="fillVolume" node="0>0|4|0" />
+        <i3dMapping id="unloadNode" node="0>0|4|1" />
+        <i3dMapping id="dischargeNode" node="0>0|4|2" />
+        <i3dMapping id="boxSpawnPlace" node="0>0|5" />
+        <i3dMapping id="dischargeActivationTrigger" node="0>0|6" />
+        <i3dMapping id="unloadingEffect" node="0>0|7|0" />
+        <i3dMapping id="exactFillRootNode" node="0>0|7|2" />
+        <i3dMapping id="belts" node="0>0|8" />
+        <i3dMapping id="tipOccluderStart" node="0>0|9|0" />
+        <i3dMapping id="tipOccluderWidth" node="0>0|9|1" />
+        <i3dMapping id="tipOccluderHeight" node="0>0|9|2" />
+        <i3dMapping id="roll01" node="0>0|11|0" />
+        <i3dMapping id="roll02" node="0>0|11|1" />
+        <i3dMapping id="roll03" node="0>0|11|2" />
+        <i3dMapping id="roll04" node="0>0|11|3" />
+        <i3dMapping id="roll05" node="0>0|11|4" />
+        <i3dMapping id="roll06" node="0>0|11|5" />
+        <i3dMapping id="roll07" node="0>0|11|6" />
+        <i3dMapping id="roll08" node="0>0|11|7" />
+        <i3dMapping id="roll09" node="0>0|11|8" />
+        <i3dMapping id="roll10" node="0>0|11|9" />
+        <i3dMapping id="roll11" node="0>0|11|10" />
+        <i3dMapping id="roll12" node="0>0|11|11" />
+        <i3dMapping id="roll13" node="0>0|11|12" />
+        <i3dMapping id="roll14" node="0>0|11|13" />
+    </i3dMappings>
+</vehicle>

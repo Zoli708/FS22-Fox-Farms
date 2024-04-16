@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Fox Farms" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/maps/textures/shared/props/euroPallet01_normal.png"/>
+    <File fileId="7" filename="$data/maps/textures/shared/props/euroPallet01_specular.png"/>
+    <File fileId="5" filename="$data/maps/textures/shared/props/euroPallet02_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/metalTrashSet_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/metalTrashSet_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/props/metalTrashSet_specular.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/props/propsDecals_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/textures/shared/props/propsDecals_specular.png"/>
+    <File fileId="10" filename="$data/shaders/decalShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet02_mat" materialId="4">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.439216 0.439216 0.439216 1">
+    </Material>
+    <Material name="metalTrashSet_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="7" alphaBlending="true" customShaderId="10">
+      <Texture fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="45" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bgaBunkerSilo.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="bgaBunkerSilo" nodeId="13">
+        <TransformGroup name="siloArea" nodeId="14">
+          <TransformGroup name="siloAreaStart" translation="-45.508 -9.09495e-15 -20.594" nodeId="15"/>
+          <TransformGroup name="siloAreaWidth" translation="46.879 -9.09495e-15 -20.594" nodeId="16"/>
+          <TransformGroup name="siloAreaHeight" translation="-45.508 -9.09495e-15 20.9295" nodeId="17"/>
+          <Shape shapeId="1" name="siloAreaTrigger" scale="2.73952 1 1.61662" static="true" trigger="true" collisionMask="3145728" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="siloInnerArea" nodeId="19">
+          <TransformGroup name="siloInnerAreaStart" translation="-45.094 -9.09495e-15 -20.225" nodeId="20"/>
+          <TransformGroup name="siloInnerAreaWidth" translation="46.5423 -9.09495e-15 -20.225" nodeId="21"/>
+          <TransformGroup name="siloInnerAreaHeight" translation="-45.094 -9.09495e-15 20.6847" nodeId="22"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" translation="0 0 -4.54747e-15" nodeId="23">
+          <TransformGroup name="clearArea1Start" translation="-45.3456 -9.09495e-15 -20.8" nodeId="24">
+            <TransformGroup name="clearArea1Width" translation="92.2193 0 1.81899e-14" nodeId="25"/>
+            <TransformGroup name="clearArea1Height" translation="1.27329e-13 0 41.9688" nodeId="26"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="27">
+          <TransformGroup name="levelArea1Start" translation="-45.6666 0 -20.9129" nodeId="28">
+            <TransformGroup name="levelArea1Width" translation="93.0009 0 3.18323e-14" nodeId="29"/>
+            <TransformGroup name="levelArea1Height" translation="9.09495e-15 0 42.5373" nodeId="30"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" translation="0 0 -4.54747e-15" nodeId="31">
+          <TransformGroup name="testArea1Start" translation="-45.734 0 -20.8" nodeId="32">
+            <TransformGroup name="testArea1End" translation="92.568 3.99936 41.758" nodeId="33"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="0 0 -4.54747e-15" nodeId="34">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-45.734 0 -20.8" nodeId="35">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="92.568 0 41.758" nodeId="36"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visual" nodeId="37">
+          <Shape shapeId="2" name="oldMetalPile03_vis" lockedgroup="true" translation="61.8163 0 -40.778" rotation="-1.33472e-05 47.2781 -2.0241e-05" scale="2.51405 2.51405 4.8155" clipDistance="130" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="euroPalletOld_vis" translation="-0.000452042 -0.165871 4.57764e-05" rotation="180 -88.5089 180" clipDistance="80" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="4" name="decal" translation="0 0 9.05991e-06" rotation="8.14222e-12 -0 -2.03555e-13" clipDistance="50" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="5" name="collision" translation="-0.0585603 0.306553 -0.00110912" rotation="-1.83082e-06 0 1.53815e-05" scale="0.870666 0.472956 1.82431" static="true" nodeId="44" materialIds="45" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

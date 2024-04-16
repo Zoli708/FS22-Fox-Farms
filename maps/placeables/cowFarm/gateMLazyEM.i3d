@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Fox Farms" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="../../textures/Rustymetal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bgaBox_mat" materialId="4" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="chain" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.839216 1 0.701961">
+    </Material>
+    <Material name="MAT1" materialId="6">
+      <Texture fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="gateMLazyEM.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="gateMLazyEM" nodeId="15">
+        <TransformGroup name="vis" nodeId="16">
+          <Shape shapeId="1" name="OpenChain" translation="0.102589 0.890988 0.0614665" rotation="-0 -90 0" nodeId="17" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="LatchedChain" translation="0.0891114 0.916316 0.0623735" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="HookChain" translation="0.0715176 0.916316 0.10424" nodeId="19" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="Gate" translation="-3.06017e-07 0.762 -4.877" rotation="-2.11798e-16 0 7.08521e-10" nodeId="20" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="5" name="cube" translation="0 0 2.415" scale="0.0737153 1.23829 4.89493" kinematic="true" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="6" name="ENDS" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="5" name="cube" translation="0 0.7535 -6.23578" scale="0.1799 1.55156 2.62495" static="true" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="5" name="cube" translation="0 0.7535 1.34024" scale="0.1799 1.55156 2.62495" static="true" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="trig" nodeId="25">
+          <Shape shapeId="7" name="trigger" scale="1.6381 2.3 1.327" static="true" trigger="true" collisionMask="3145728" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="area1Start" translation="-0.187322 0 0" nodeId="27">
+          <TransformGroup name="area1Width" translation="0.329466 0 -4.97913" nodeId="28"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

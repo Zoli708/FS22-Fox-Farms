@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Fox Farms" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/maps/mapUS/textures/props/waterTank02_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/props/waterTank02_normal.png"/>
+    <File fileId="4" filename="$data/maps/mapUS/textures/props/waterTank02_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="waterTank02_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="waterTank.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="waterTank" nodeId="10">
+        <Shape shapeId="1" name="fillTrigger" translation="0 1 1.96697" scale="0.777751 1 1" static="true" trigger="true" collisionMask="1075838976" clipDistance="300" nodeId="11" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="aiNode" translation="-2.00505e-07 0 1.4313" rotation="0 90 0" nodeId="12"/>
+        <TransformGroup name="loadingMarker" translation="0 0 0.633723" nodeId="13"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="14">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-1.5 0 -1.5" nodeId="15">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="3 0 5.43596" nodeId="16"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visual" nodeId="17">
+          <Shape shapeId="2" name="waterTank02" lockedgroup="true" translation="0.00263871 1.12634e-06 -1.23661" rotation="5.22375e-05 -4.03788 3.331e-05" static="true" clipDistance="130" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="faucet04" translation="0 3.55271e-17 1" clipDistance="60" nodeId="19" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

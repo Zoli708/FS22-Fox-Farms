@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pickupOUT.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="$data/effects/pickup/sharedPickupArrayIN.png"/>
+    <File fileId="5" filename="$data/effects/pickup/sharedPickupArrayOUT.png"/>
+    <File fileId="7" filename="$data/effects/unload/gradient_diffuse.png"/>
+    <File fileId="1" filename="$data/fillPlanes/straw_diffuse.png"/>
+    <File fileId="2" filename="$data/fillPlanes/straw_normal.png"/>
+    <File fileId="4" filename="$data/shaders/motionPathShader.xml"/>
+    <File fileId="3" filename="$data/shared/default_specular.png"/>
+    <File fileId="10" filename="../dryAlfalfa_diffuse.dds"/>
+    <File fileId="8" filename="../alfalfa_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="silage_mat" materialId="18" customShaderId="4" customShaderVariation="alphaMapGradient_cosOffsetY_scaleByLife">
+      <Texture fileId="10"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="9"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5 0 0"/>
+      <CustomParameter name="sizeScale" value="1 1 0 0"/>
+    </Material>
+    <Material name="silage_mat" materialId="19" customShaderId="4" customShaderVariation="alphaMapGradient_cosOffsetY_scaleByLife">
+      <Texture fileId="8"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="9"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5 0 0"/>
+      <CustomParameter name="sizeScale" value="1 1 0 0"/>
+    </Material>
+    <Material name="straw_mat3" materialId="7" customShaderId="4" customShaderVariation="rotateByLife_cosOffsetY_alphaMapGradient">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="rotateSpeed" value="5 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pickupOUT.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="pickupEffects_particleMeshesOUT" nodeId="11">
+        <TransformGroup name="pickupEffects_particleMeshesOUT_meshes" nodeId="12">
+          <Shape shapeId="1" name="pickupEffects_particleMeshesOUT_nr4_rl22_v1" nodeId="13" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="pickupEffects_particleMeshesOUT_materials" nodeId="14">
+          <Shape shapeId="2" name="lucerne_windrow" clipDistance="300" nodeId="22" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="dryLucerne_windrow" clipDistance="300" nodeId="23" materialIds="18" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

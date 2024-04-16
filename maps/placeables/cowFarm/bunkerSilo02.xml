@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="bunkerSilo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_bunkerSiloLarge</name>
+        <functions>
+            <function>$l10n_function_bunkerSilo</function>
+        </functions>
+        <image>maps/placeables/store_trigger.png</image>
+        <price>120000</price>
+        <dailyUpkeep>120</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+        <vertexBufferMemoryUsage>29952</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>4608</indexBufferMemoryUsage>
+        <textureMemoryUsage>1048576</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+		
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+		<!-- <boughtWithFarmland>true</boughtWithFarmland> -->
+		
+        <storeIconRendering>
+            <settings cameraXRot="-25" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/cowFarm/bunkerSilo02.i3d</filename>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90" >
+        <testAreas>
+            <testArea startNode="0>3|0" endNode="0>3|0|0" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="0>1|0" widthNode="0>1|0|0" heightNode="0>1|0|1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="0>2|0" widthNode="0>2|0|0" heightNode="0>2|0|1" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas />
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="0>4|0" endNode="0>4|0|0" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="0>4|0" endNode="0>4|0|0" />
+        </updateAreas>
+    </ai>
+
+    <bunkerSilo isExtendable="false" siloToSiloDistance="13" snapDistance="20" acceptedFillTypes="chaff grass_windrow dryGrass_windrow" inputFillType="chaff" outputFillType="silage" distanceToCompactedFillLevel="100" openingLength="5" >
+        <area startNode="0>0|0|0" widthNode="0>0|0|1" heightNode="0>0|0|2" />
+        <innerArea startNode="0>0|1|0" widthNode="0>0|1|1" heightNode="0>0|1|2" />
+        <interactionTrigger node="0>0|0|3" />
+        <!-- <wallLeft node="wallLeft" collision="wallLeftCollision" /> -->
+        <!-- <wallRight node="wallRight" collision="wallRightCollision" /> -->
+    </bunkerSilo>
+
+    <!-- <i3dMappings> -->
+        <!-- <i3dMapping id="siloAreaStart" node="0>0|0|0" /> -->
+        <!-- <i3dMapping id="siloAreaWidth" node="0>0|0|1" /> -->
+        <!-- <i3dMapping id="siloAreaHeight" node="0>0|0|2" /> -->
+        <!-- <i3dMapping id="siloAreaTrigger" node="0>0|0|3" /> -->
+        <!-- <i3dMapping id="siloInnerAreaStart" node="0>0|1|0" /> -->
+        <!-- <i3dMapping id="siloInnerAreaWidth" node="0>0|1|1" /> -->
+        <!-- <i3dMapping id="siloInnerAreaHeight" node="0>0|1|2" /> -->
+        <!-- <i3dMapping id="wallLeft" node="0>0|2|0" /> -->
+        <!-- <i3dMapping id="wallRight" node="0>0|2|1" /> -->
+        <!-- <i3dMapping id="clearArea1Start" node="0>1|0" /> -->
+        <!-- <i3dMapping id="clearArea1Width" node="0>1|0|0" /> -->
+        <!-- <i3dMapping id="clearArea1Height" node="0>1|0|1" /> -->
+        <!-- <i3dMapping id="levelArea1Start" node="0>2|0" /> -->
+        <!-- <i3dMapping id="levelArea1Width" node="0>2|0|0" /> -->
+        <!-- <i3dMapping id="levelArea1Height" node="0>2|0|1" /> -->
+        <!-- <i3dMapping id="testArea1Start" node="0>3|0" /> -->
+        <!-- <i3dMapping id="testArea1End" node="0>3|0|0" /> -->
+        <!-- <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" /> -->
+        <!-- <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" /> -->
+        <!-- <i3dMapping id="wallLeftCollision" node="0>7|0" /> -->
+        <!-- <i3dMapping id="wallRightCollision" node="0>7|1" /> -->
+    <!-- </i3dMappings> -->
+</placeable>

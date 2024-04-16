@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Farm decorations</name>
+        <functions>
+            <function>Decorations around the farm. For sale but not to buy!</function>
+        </functions>
+        <image>maps/placeables/store_prefabs.png</image>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <price>150000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <vertexBufferMemoryUsage>2780596</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>372492</indexBufferMemoryUsage>
+        <textureMemoryUsage>76387040</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/farmBuildings/farmPrefabs.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <!-- <boughtWithFarmland>true</boughtWithFarmland> -->
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <tipOcclusionUpdateArea sizeX="30" sizeZ="110" />
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+    </leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <ai>
+        <updateAreas></updateAreas>
+    </ai>
+</placeable>

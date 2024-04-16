@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="79">
+    <author>Zoli708</author>
+    <version>1.0.0.7</version>
+    <title>
+        <en>Fox Farms</en>
+    </title>
+    <description>
+        <en><![CDATA[Welcome to Fox Farms!
+
+What the map provides:
+- 22 field, 4 meadows (0.2-33.6ha)
+- 1 Farm
+- Fuel stations
+- Water filling stations
+- Filling station (seed, fertilizer, etc.)
+- Cow pasture (objects: LazyEM)
+- Open bunker silos
+- 8 sale points
+- Animal dealer
+- Vehicle shop
+- BGA
+- Mission system
+
+Changelog 1.0.0.7 - !!! New save game required !!!
+- Improved AI driving
+- Improved Premium Edition compatibility
+- Cows added to the animal trader
+- Carrot added to the map
+- Machines added for carrots
+
+Changelog 1.0.0.6
+- Grass fixed in the crop calendar
+- Remowed crops: Flax, Lentils and Peas (Due to compatibility with premium edition)
+
+Changelog 1.0.0.5
+- Increased modDesc version
+- Alfalfa added
+- Bushes added at field corners and power poles
+- 10 soil textures added
+- 3 soil textures changed
+
+Changelog 1.0.0.4
+- Prefabs decorative elements are sellable
+- Increased modDesc version
+
+Changelog 1.0.0.3 - !!! New save game required !!!
+- New plants: Flax, Lentils, Peas
+- Sale sheds fixed
+- On difficulty levels, the buildings remain but can be sold
+- Biogas and bunker silo sellable
+- Grain mill sellable
+
+Changelog 1.0.0.2
+- ModDesc version increased
+- Added soil map (Precision Farming DLC)
+- Cow pasture gate warning fixed
+- Cow pasture milk filling fixed
+
+1.0.0.1 - !!! New save game required !!!
+- Collectibles
+- Preview image updated
+- Dark dirt colored soil paint added
+- Road network, map edge can be purchased
+- BGA capacity increased
+- Cow pasture gate icon fixed
+- Bunkersilo fixed
+- Straw, hay bug fixed
+- Vehicle repaint fixed
+- Map edge reworked
+]]></en>
+<de><![CDATA[Willkommen auf Fox Farms!
+
+Was die Karte bietet:
+- 22 Felder, 4 Wiesen (0,2-33,6ha)
+- 1 Bauernhof
+- Tankstellen
+- Wassertankstellen
+- Ladestation (Saatgut, Dünger, etc.)
+- Kuhweide (Objekte: LazyEM)
+- Offene Bunkersilos
+- 8 Verkaufsstellen
+- Tierhändler
+- Fahrzeuggeschäft
+- BGA
+- Missionssystem
+
+Änderungsprotokoll 1.0.0.7 - !!! Neue Spielstände empfohlen !!!
+- Verbessertes KI-Fahren
+- Verbesserte Kompatibilität mit der Premium Edition
+- Kühe dem Tierhändler hinzugefügt
+- Karotte zur Karte hinzugefügt
+- Maschinen für Karotten hinzugefügt
+
+Änderungsprotokoll 1.0.0.6
+- Gras im Anbauplan korrigiert
+- Entfernte Kulturen: Lein, Linsen und Erbsen (Aufgrund von Inkompatibilität mit der Premium Edition)
+
+Änderungsprotokoll 1.0.0.5 - !!! Neue Spielstände empfohlen !!!
+- Erhöhte modDesc-Version
+- Luzerne hinzugefügt
+- Büsche an den Feldrändern und Strommasten hinzugefügt
+- 10 Bodentexturen hinzugefügt
+- 3 Bodentexturen geändert
+
+Changelog 1.0.0.4
+- Prefab-Dekolemente sind nun verkäuflich
+- Erhöhte modDesc-Version
+
+Changelog 1.0.0.3 - !!! Neuer Spielstand erforderlich !!!
+- Neue Pflanzen: Leinen, Linsen, Erbsen
+- Verkaufsschuppen wurden gefixt
+- Bei Schwierigkeitsgraden bleiben die Gebäude bestehen, können aber verkauft werden
+- Biogasanlage und Bunkersilo verkäuflich
+- Getreidemühle verkäuflich
+
+Changelog 1.0.0.2
+- ModDesc-Version erhöht
+- Bodenkarte hinzugefügt (Precision Farming DLC)
+- Kuhweidetor-Warnung behoben
+- Befüllung mit Kuhweidemilch behoben
+
+Changelog 1.0.0.1 - !!! Neuer Spielstand erforderlich !!!
+- Sammlerstücke
+- ModIcon aktualisiert
+- Dunkle, schmutzfarbene Bodenfarbe hinzugefügt
+- Straßennetz, Kartenrand kann erworben werden
+- BGA-Kapazität erhöht
+- Symbol für Kuhweidetor behoben
+- Bunkersilo behoben
+- Stroh-, Heufehler behoben
+- Neulackierung des Fahrzeugs behoben
+- Kartenrand überarbeitet
+]]></de>
+<fr><![CDATA[Bienvenue sur la carte des fermes Fox !
+
+Ce que la carte fournit :
+- 22 champs, 4 prairies (0,2-33,6ha)
+- 1 Ferme
+- Stations essence
+- Stations de remplissage d'eau
+- Station de remplissage (semences, engrais, etc.)
+- Pâturage de vaches (objets : LazyEM)
+- Silos bunker ouverts
+- 8 points de vente
+- Marchand d'animaux
+- Magasin de véhicules
+-BGA
+- Système de missions
+
+Journal des modifications 1.0.0.7 - !!! Nouvelle partie recommandée !!!
+- Conduite IA améliorée
+- Compatibilité améliorée avec l'édition Premium
+- Vaches ajoutées au marchand d'animaux
+- Carotte ajoutée à la carte
+- Machines ajoutées pour les carottes
+
+Journal des modifications 1.0.0.6
+- Correction de l'herbe dans le calendrier des cultures
+- Cultures supprimées : Lin, Lentilles et Pois (En raison de la compatibilité avec l'édition premium)
+
+Journal des modifications 1.0.0.5 - !!! Nouvelle partie recommandée !!!
+- Version modDesc augmentée
+- Luzerne ajoutée
+- Buissons ajoutés aux coins des champs et aux poteaux électriques
+- 10 textures de sol ajoutées
+- 3 textures de sol modifiées
+
+Changelog 1.0.0.4
+- Les éléments de décoration préfabriqués sont vendables
+- Version de modDesc augmentée
+
+1.0.0.3 - !!! Nouvelle sauvegarde requise !!!
+- Nouvelles plantes : lin, lentilles, pois
+- Des hangars de vente ont été réparés
+- Aux niveaux de difficulté, les bâtiments restent en place mais peuvent être vendus
+- Usine de biogaz et silo à bunkers vendables
+- Moulin à grain vendable
+
+Changelog 1.0.0.2
+- Version ModDesc augmentée
+- Ajout de la carte des sols (Precision Farming DLC)
+- Correction de l'avertissement de porte de pâturage de vache
+- Remplissage de lait de pâturage de vache fixe
+
+Changelog 1.0.0.1 - !!! Nouvelle sauvegarde requise !!!
+- Objets de collection
+- Image d'aperçu mise à jour
+- Ajout d'une peinture de sol de couleur terre foncée
+- Réseau routier, bord de carte peut être acheté
+- Capacité BGA augmentée
+- L'icône de la porte du pâturage des vaches a été corrigée
+- Bunkersilo fixe
+- Paille, punaise de foin corrigée
+- Réparation de la peinture du véhicule
+- Bord de carte retravaillé
+]]></fr>
+    </description>
+    <iconFilename>icon_FFarms.png</iconFilename>
+    <multiplayer supported="true"/>
+    <maps>
+        <map id="FoxFarms" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/FFarms.xml" defaultVehiclesXMLFilename="maps/FFarms_vehicles.xml" defaultPlaceablesXMLFilename="maps/FFarms_placeables.xml" defaultItemsXMLFilename="maps/FFarms_items.xml">
+            <title>
+                <en>Fox Farms</en>
+            </title>
+            <description>
+                <en>Welcome to Fox Farms!</en>
+				<de>Willkommen auf der Fox Farms!</de>
+				<fr>Bienvenue sur la carte des fermes Fox!</fr>
+            </description>
+            <iconFilename>maps/FFarms_preview.png</iconFilename>
+        </map>
+    </maps>
+	<dependencies>
+		<dependency>FS22_PickupHeaderPack_crossplay</dependency>
+		<dependency>FS22_SwatherPack</dependency>
+	</dependencies>
+	<storeItems>
+		<!-- Fox Farms & Cow Farm -->
+		<storeItem xmlFilename="maps/placeables/baseBuildingsXML/flatBottomBin3608.xml"/>
+		<storeItem xmlFilename="maps/placeables/baseBuildingsXML/flatBottomBin3609.xml"/>
+		<storeItem xmlFilename="maps/placeables/baseBuildingsXML/easyShed03.xml"/>
+		<storeItem xmlFilename="maps/placeables/baseBuildingsXML/easyShed01.xml"/>
+		<storeItem xmlFilename="maps/placeables/baseBuildingsXML/imetosIMT300.xml"/>
+		<storeItem xmlFilename="maps/placeables/baseBuildingsXML/doghouse.xml"/>
+		<storeItem xmlFilename="maps/placeables/farmBuildings/farmHouse.xml"/>
+		<storeItem xmlFilename="maps/placeables/farmBuildings/farmPrefabs.xml"/>
+		<storeItem xmlFilename="maps/placeables/gasStations/gasStationFarm.xml"/>
+		<storeItem xmlFilename="maps/placeables/cowFarm/cowFarmPrefabs.xml"/>
+		<storeItem xmlFilename="maps/placeables/cowFarm/bunkerSilo01.xml"/>
+		<storeItem xmlFilename="maps/placeables/cowFarm/bunkerSilo02.xml"/>
+		<storeItem xmlFilename="maps/placeables/cowFarm/gateMLazyEM.xml"/>
+		<storeItem xmlFilename="maps/placeables/cowFarm/cowFarm01/cowFarm01.xml"/>
+		<storeItem xmlFilename="maps/placeables/cowFarm/cowFarm02/cowFarm02.xml"/>
+		<storeItem xmlFilename="maps/placeables/cowFarm/cowFarm03/cowFarm03.xml"/>
+		<storeItem xmlFilename="maps/placeables/cowFarm/waterTank.xml"/>
+		<storeItem xmlFilename="maps/placeables/cowFarm/manureHeap/manureHeap.xml"/>
+		<!-- Factory -->
+		<storeItem xmlFilename="maps/placeables/grainMill/grainMill.xml"/>
+		<!-- Selling stations -->
+		<storeItem xmlFilename="maps/placeables/sellingStations/sellingStationGW.xml"/>
+		<storeItem xmlFilename="maps/placeables/sellingStations/sellingStationAD.xml"/>
+		<storeItem xmlFilename="maps/placeables/sellingStations/sellingStationShop01.xml"/>
+		<storeItem xmlFilename="maps/placeables/sellingStations/sellingStationShop02.xml"/>
+		<storeItem xmlFilename="maps/placeables/sellingStations/sellingStationShop03.xml"/>
+		<storeItem xmlFilename="maps/placeables/sellingStations/sellingStationShop04.xml"/>
+		<storeItem xmlFilename="maps/placeables/sellingStations/sellingStationShop05.xml"/>
+		<!-- Animaldealer animals -->
+		<storeItem xmlFilename="maps/placeables/animalDealer/animalDealerCow01.xml"/>
+		<storeItem xmlFilename="maps/placeables/animalDealer/animalDealerCow02.xml"/>
+		<storeItem xmlFilename="maps/placeables/animalDealer/animalDealerCow03.xml"/>
+		<!-- BGA -->
+		<storeItem xmlFilename="maps/placeables/bga/bga1mw.xml"/>
+		<storeItem xmlFilename="maps/placeables/bga/bgaBunkerSilo.xml"/>
+		<storeItem xmlFilename="maps/placeables/baseBuildingsXML/hds9184M.xml"/>
+		<storeItem xmlFilename="maps/placeables/waterFillTriggers/fireHydrant.xml"/>
+		<!-- Gas Stations -->
+		<storeItem xmlFilename="maps/placeables/gasStations/gasStation01.xml"/>
+		<storeItem xmlFilename="maps/placeables/gasStations/gasStation02.xml"/>
+		<!-- Water & Fill Station -->
+		<storeItem xmlFilename="maps/placeables/waterFillTriggers/waterFillTriggers.xml"/>
+		<storeItem xmlFilename="maps/placeables/limeStation/limeStationWH.xml"/>
+		<storeItem xmlFilename="maps/placeables/limeStation/limeStation.xml"/>
+		<!-- Workshop -->
+		<storeItem xmlFilename="maps/placeables/workshop/workshop01.xml"/>
+		<storeItem xmlFilename="maps/placeables/workshop/workshop02.xml"/>
+		<!-- Vehicles -->
+		<storeItem xmlFilename="maps/vehicles/grimme/evo290.xml"/>
+		<storeItem xmlFilename="maps/vehicles/grimme/rexor6300.xml"/>
+		<storeItem xmlFilename="maps/vehicles/grimme/rh2460.xml"/>
+		<storeItem xmlFilename="maps/vehicles/grimme/ventor4150.xml"/>
+		<!-- Pallets -->
+		<storeItem xmlFilename="maps/objects/pallets/palletCarrot.xml"/>
+
+	</storeItems>
+
+	<placeableTypes>
+	    <type name="animalDealerHusbandry" parent="placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+			<specialization name="placement" />
+			<specialization name="husbandry" />
+			<specialization name="husbandryAnimals" />
+		</type>	
+	</placeableTypes>
+</modDesc>
