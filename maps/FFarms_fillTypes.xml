@@ -613,10 +613,10 @@
             <effects fruitSmokeColor="0.3324 0.2022 0.0873 1.0000"/>
             <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_maize.png" />
             <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
-            <textures   diffuse ="$data/fillPlanes/maize_diffuse.png"
-                        normal  ="$data/fillPlanes/maize_normal.png"
-                        specular="$data/fillPlanes/maize_specular.png"
-                        distance="$data/fillPlanes/distance/maizeDistance_diffuse.png" />
+            <textures   diffuse ="maps/textures/fillPlanes/maize_diffuse.png"
+                        normal  ="maps/textures/fillPlanes/maize_normal.png"
+                        specular="maps/textures/fillPlanes/maize_specular.png"
+                        distance="maps/textures/fillPlanes/distance/maizeDistance_diffuse.png" />
         </fillType>
         <fillType name="POTATO" title="$l10n_fillType_potato" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />

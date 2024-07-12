@@ -6,10 +6,10 @@
         <farmland id="1"  priceScale="0.2"    npcName="NPC_US_01" /> <!-- Út hálózat -->
         <farmland id="2"  priceScale="1.2"    npcName="NPC_US_03" defaultFarmProperty="true" /> <!-- Farm + 3. föld -->
         <farmland id="3"  priceScale="1.8"    npcName="NPC_US_03" /> <!-- Tehén Farm -->
-        <farmland id="4"  priceScale="0.8"    npcName="NPC_US_11" showOnFarmlandsScreen="false" /> <!-- GW Mill -->
+        <farmland id="4"  priceScale="0.8"    npcName="NPC_US_11" /> <!-- GW Mill // showOnFarmlandsScreen="false" -->
         <farmland id="5"  priceScale="5.8"    npcName="NPC_US_05" /> <!-- Golden Field Mill -->
-        <farmland id="6"  priceScale="0.8"    npcName="NPC_US_07" showOnFarmlandsScreen="false" /> <!-- Kereskedő/Bolt -->
-        <farmland id="7"  priceScale="1"      npcName="NPC_US_14" showOnFarmlandsScreen="false" /> <!-- Állatkereskedő -->
+        <farmland id="6"  priceScale="0.8"    npcName="NPC_US_07" /> <!-- Kereskedő/Bolt // showOnFarmlandsScreen="false" -->
+        <farmland id="7"  priceScale="1"      npcName="NPC_US_14" /> <!-- Állatkereskedő // showOnFarmlandsScreen="false" -->
         <farmland id="8"  priceScale="3.6"    npcName="NPC_US_09" /> <!-- BGA -->
         <farmland id="9"  priceScale="0.6"    npcName="NPC_US_01" /> <!-- Térkép széle -->
 		<!-- Földek (3. föld a farmhoz van csatolva) -->

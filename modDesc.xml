@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="79">
+<modDesc descVersion="80">
     <author>Zoli708</author>
-    <version>1.0.0.7</version>
+    <version>1.0.0.8</version>
     <title>
         <en>Fox Farms</en>
     </title>
@@ -21,6 +21,12 @@ What the map provides:
 - Vehicle shop
 - BGA
 - Mission system
+
+Changelog 1.0.0.8
+- Increased modDesc version
+- Fixed AI workers (new savegame required)
+- All farmland buyable
+- Changed maize texture
 
 Changelog 1.0.0.7 - !!! New save game required !!!
 - Improved AI driving
@@ -85,6 +91,12 @@ Was die Karte bietet:
 - BGA
 - Missionssystem
 
+Änderungsprotokoll 1.0.0.8
+- Erhöhte modDesc-Version
+- KI-Arbeiter behoben (neues Spiel erforderlich)
+- Alle Ackerflächen kaufbar
+- Maistextur geändert
+
 Änderungsprotokoll 1.0.0.7 - !!! Neue Spielstände empfohlen !!!
 - Verbessertes KI-Fahren
 - Verbesserte Kompatibilität mit der Premium Edition
@@ -147,6 +159,12 @@ Ce que la carte fournit :
 - Magasin de véhicules
 -BGA
 - Système de missions
+
+Journal des modifications 1.0.0.8
+- Version modDesc augmentée
+- Travailleurs IA corrigés (nouvelle partie requise)
+- Toutes les terres agricoles sont achetables
+- Texture de maïs modifiée
 
 Journal des modifications 1.0.0.7 - !!! Nouvelle partie recommandée !!!
 - Conduite IA améliorée
