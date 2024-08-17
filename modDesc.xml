@@ -5,8 +5,8 @@
     <title>
         <en>Fox Farms</en>
     </title>
-    <description>
-        <en><![CDATA[Welcome to Fox Farms!
+<description>
+<en><![CDATA[Welcome to Fox Farms!
 
 What the map provides:
 - 22 field, 4 meadows (0.2-33.6ha)
@@ -91,24 +91,24 @@ Was die Karte bietet:
 - BGA
 - Missionssystem
 
-Änderungsprotokoll 1.0.0.8
-- Erhöhte modDesc-Version
-- KI-Arbeiter behoben (neues Spiel erforderlich)
+Changelog 1.0.0.8
+- Desc-Version erhöht
+- KI-Arbeiter behoben (Neuer Spielstand erforderlich)
 - Alle Ackerflächen kaufbar
 - Maistextur geändert
 
-Änderungsprotokoll 1.0.0.7 - !!! Neue Spielstände empfohlen !!!
+Changelog 1.0.0.7 - !!! Neue Spielstände empfohlen !!!
 - Verbessertes KI-Fahren
 - Verbesserte Kompatibilität mit der Premium Edition
 - Kühe dem Tierhändler hinzugefügt
 - Karotte zur Karte hinzugefügt
 - Maschinen für Karotten hinzugefügt
 
-Änderungsprotokoll 1.0.0.6
+Changelog 1.0.0.6
 - Gras im Anbauplan korrigiert
 - Entfernte Kulturen: Lein, Linsen und Erbsen (Aufgrund von Inkompatibilität mit der Premium Edition)
 
-Änderungsprotokoll 1.0.0.5 - !!! Neue Spielstände empfohlen !!!
+Changelog 1.0.0.5 - !!! Neue Spielstände empfohlen !!!
 - Erhöhte modDesc-Version
 - Luzerne hinzugefügt
 - Büsche an den Feldrändern und Strommasten hinzugefügt
@@ -213,7 +213,7 @@ Changelog 1.0.0.1 - !!! Nouvelle sauvegarde requise !!!
 - Réparation de la peinture du véhicule
 - Bord de carte retravaillé
 ]]></fr>
-    </description>
+</description> 
     <iconFilename>icon_FFarms.png</iconFilename>
     <multiplayer supported="true"/>
     <maps>

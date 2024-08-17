@@ -615,8 +615,8 @@
             <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
             <textures   diffuse ="maps/textures/fillPlanes/maize_diffuse.png"
                         normal  ="maps/textures/fillPlanes/maize_normal.png"
-                        specular="maps/textures/fillPlanes/maize_specular.png"
-                        distance="maps/textures/fillPlanes/distance/maizeDistance_diffuse.png" />
+                        specular="$data/fillPlanes/maize_specular.png"
+                        distance="$data/fillPlanes/distance/maizeDistance_diffuse.png" />
         </fillType>
         <fillType name="POTATO" title="$l10n_fillType_potato" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
