@@ -15,11 +15,8 @@ What the map provides:
 - BGA
 - Mission system
 
-# 📦 Update 7 changes:
-- Improved AI driving
-- Improved Premium Edition compatibility
-- Cows added to the animal trader
-- Carrot added to the map
-- Machines added for carrots
-
-⚠️ This update requires a new save for the new changes, but if you are not interested in the new changes, then a new save is not necessary.
+# 📦 Update 8 changes:
+- Increased modDesc version
+- Fixed AI workers (new savegame required)
+- All farmland buyable
+- Changed maize texture
